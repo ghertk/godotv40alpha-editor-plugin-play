@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl7ohtq67h4wt"]
+
+[ext_resource type="Script" path="res://addons/my_main_screen_plugin/Button.gd" id="1_pq281"]
+
+[node name="CenterContainer" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="."]
+offset_left = 467.0
+offset_top = 284.0
+offset_right = 557.0
+offset_bottom = 315.0
+text = "Print Hello"
+script = ExtResource( "1_pq281" )
+
+[connection signal="pressed" from="Button" to="Button" method="_on_PrintHello_pressed"]

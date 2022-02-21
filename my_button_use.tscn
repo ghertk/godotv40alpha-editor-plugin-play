@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cglysr304yoma"]
+
+[ext_resource type="Script" path="res://addons/my_custom_node/my_button.gd" id="1_422q0"]
+
+[node name="MyButtonUse" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MyButton" type="Button" parent="."]
+offset_right = 758.0
+offset_bottom = 345.0
+script = ExtResource( "1_422q0" )
+__meta__ = {
+"_edit_layout_mode": 0,
+"_edit_use_custom_anchors": false
+}

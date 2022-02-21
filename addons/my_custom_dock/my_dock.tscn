@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bij6wvnyi3nb"]
+
+[node name="MyDock" type="Button"]
+offset_right = 8.0
+offset_bottom = 31.0
+text = "Click me!"

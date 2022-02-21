@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node3D",
+"class": &"MyCustomNode3D",
+"language": &"GDScript",
+"path": "res://my_custom_node3d.gd"
+}, {
+"base": "VisualShaderNodeCustom",
+"class": &"VisualShaderNodePerlinNoise3D",
+"language": &"GDScript",
+"path": "res://perlin_noise_3d.gd"
+}]
+_global_script_class_icons={
+"MyCustomNode3D": "",
+"VisualShaderNodePerlinNoise3D": ""
+}
+
+[application]
+
+config/name="EditorPluginPlay"
+config/icon="res://icon.png"
+config/features=PackedStringArray("4.0", "Vulkan Clustered")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/my_custom_dock/plugin.cfg", "res://addons/my_custom_gizmo_plugin/plugin.cfg", "res://addons/my_custom_inspector_plugin/plugin.cfg", "res://addons/my_custom_node/plugin.cfg", "res://addons/my_main_screen_plugin/plugin.cfg", "res://addons/my_material_import/plugin.cfg")
+
+[importer_defaults]
+
+demos.mysillymaterial={
+"use_red_anyway": false
+}

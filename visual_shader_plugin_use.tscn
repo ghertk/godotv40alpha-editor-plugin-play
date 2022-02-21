@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0q211qr3b3c2"]
+
+[ext_resource type="Shader" uid="uid://b3mw02abxc1xy" path="res://perlin_noise_3d.tres" id="1_lo84r"]
+[ext_resource type="Texture2D" uid="uid://b20ees8sjk132" path="res://icon.png" id="2_7biuv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_060fk"]
+shader = ExtResource( "1_lo84r" )
+
+[node name="VisualShaderPluginUse" type="Sprite2D"]
+material = SubResource( "ShaderMaterial_060fk" )
+texture = ExtResource( "2_7biuv" )

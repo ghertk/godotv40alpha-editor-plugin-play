@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://r15gsyyg5spd"]
+
+[ext_resource type="Material" uid="uid://s0pbtgtrqgdm" path="res://test.mtxt" id="1_1mt64"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q458p"]
+material = ExtResource( "1_1mt64" )
+
+[node name="MyMaterialImportUse" type="MeshInstance3D"]
+mesh = SubResource( "SphereMesh_q458p" )
